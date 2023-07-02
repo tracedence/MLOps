@@ -1,4 +1,4 @@
-From continuumio/anaconda3
+FROM python:3.9
 
 copy ./flask_app /usr/local/python/
 
