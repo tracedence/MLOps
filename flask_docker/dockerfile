@@ -1,0 +1,11 @@
+From continuumio/anaconda3
+
+copy ./flask_app /usr/local/python/
+
+Expose 5000
+
+Workdir /usr/local/python/
+
+run pip install -r requirements.txt
+
+Cmd python flask_app.py
